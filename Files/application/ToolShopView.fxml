@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ShopController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="welcomeLabel" prefHeight="35.0" prefWidth="275.0" text="Welcome to ToolCentral!" underline="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="50.0" left="155.0" right="175.0" top="50.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="39.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="menuLabel" text="Please select one of the options below:" />
+         </children>
+      </HBox>
+      <HBox prefHeight="36.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#listAllTools" text="List all tools">
+               <HBox.margin>
+                  <Insets bottom="9.0" left="150.0" top="9.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#checkItemQuantity" text="Check Item Quantity">
+               <HBox.margin>
+                  <Insets bottom="9.0" left="150.0" top="9.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="36.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addAnItem" text="Add an Item">
+               <HBox.margin>
+                  <Insets bottom="9.0" left="150.0" top="9.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#removeAnItem" text="Remove an Item">
+               <HBox.margin>
+                  <Insets bottom="9.0" left="148.0" top="9.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="36.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#searchToolName" text="Search for Tool by name">
+               <HBox.margin>
+                  <Insets bottom="9.0" left="150.0" top="9.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#searchToolID" text="Search for Tool by ID">
+               <HBox.margin>
+                  <Insets bottom="9.0" left="85.0" top="9.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="36.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#decreaseAnItem" text="Decrease an Item">
+               <HBox.margin>
+                  <Insets bottom="9.0" left="150.0" top="9.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#quit" text="Quit">
+               <HBox.margin>
+                  <Insets bottom="9.0" left="122.0" top="9.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
